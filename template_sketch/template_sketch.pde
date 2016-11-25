@@ -4,7 +4,7 @@ int w  = 800;
 int h  = 450;
 int bg = 255;
 
-color[] colors = { 
+color[] colors = {
   color(0,   0,   0),   // #000000 (black)
   color(232, 10,  137), // #e90e8b (pink)
   color(255, 255, 255), // #ffffff (white)
@@ -26,6 +26,7 @@ void settings() {
 }
 
 void setup() {
+  size(800, 450);
   noFill();
 }
 
@@ -38,6 +39,6 @@ void drawColorSwatches() {
   for(int i = 0; i < colors.length; i++) {
     noStroke();
     fill(colors[i]);
-    rect(i * 61.55, height-20, 61.55, 20); 
+    rect(i * 61.55, height-20, 61.55, 20);
   }
 }
